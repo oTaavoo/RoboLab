@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboLab — Detalhes do Robô</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">≡</span>
+        <span>Robôs de casa</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="index.html">Painel</a>
+        <a href="robos.html">Frota</a>
+        <a href="detalhes.html" class="active">Detalhes</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="tarefas.html">Tarefas</a>
+      </nav>
+      <div class="user-actions">
+        <span>Minha casa</span>
+        <a href="login.html" class="account-link">Minha conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <div>
+        <h1>Atlas / RB-001</h1>
+        <p>Frota / Atlas · Robô aspirador e mop · Modelo Casa S1</p>
+      </div>
+    </section>
+
+    <!-- Ilustração + Ficha Técnica -->
+    <section class="robots-grid-2" style="grid-template-columns: 1fr 2fr;">
+      <article class="card" style="background-color: var(--bg-card-tint);">
+        <div class="robot-card-header">
+          <span class="link-action" style="font-size: 0.75rem;">CASA S1</span>
+          <span class="robot-subtitle">RB-001</span>
+        </div>
+        <div class="robot-illustration-box tall">
+          <div class="css-robot-vacuum" style="width: 130px; height: 130px;"></div>
+        </div>
+        <strong>Aspirador e mop inteligente</strong>
+        <p class="robot-subtitle">Ilustração do equipamento · Modelo conceitual</p>
+      </article>
+
+      <article class="card">
+        <div class="robot-card-header">
+          <h2>Ficha técnica</h2>
+          <span class="badge cleaning">Em limpeza · Conectado</span>
+        </div>
+        <p class="robot-subtitle" style="margin-bottom: 1rem;">Tarefa atual: aspirar a sala e o corredor · 68% concluído</p>
+
+        <div class="meter-block">
+          <div class="meter-labels">
+            <strong>87% de bateria</strong>
+            <span>Autonomia estimada de 1h 50min</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill high" style="width: 87%;"></div>
+          </div>
+        </div>
+
+        <div class="card-meta-grid" style="border-bottom: none;">
+          <div><span class="meta-label">Navegação</span><strong>LiDAR e mapa de ambientes</strong></div>
+          <div><span class="meta-label">Sucção máxima</span><strong>4.000 Pa</strong></div>
+          <div><span class="meta-label">Bateria nominal</span><strong>5.200 mAh</strong></div>
+          <div><span class="meta-label">Reservatórios</span><strong>Pó 400 ml · Água 250 ml</strong></div>
+          <div><span class="meta-label">Dimensões</span><strong>35 × 35 × 9,6 cm</strong></div>
+          <div><span class="meta-label">Conectividade</span><strong>Wi-Fi 2,4 GHz · Firmware 2.4.1</strong></div>
+        </div>
+
+        <div style="background: var(--bg-purple-light); padding: 0.75rem 1rem; border-radius: var(--radius-sm); display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--blue-text); font-weight: 600;">
+          <span>Todos os dias · 14:00</span>
+          <span>Modo automático · Aspirar</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Cinco Tarefas do Atlas -->
+    <section class="card" style="margin-bottom: 2rem;">
+      <div class="robot-card-header">
+        <div>
+          <h2>Cinco tarefas do Atlas</h2>
+          <p class="robot-subtitle">Plano de limpeza da sala e do corredor · Início às 14:00 · Conclusão estimada às 14:40</p>
+        </div>
+        <span class="robot-subtitle">Missão T-001 · 2 concluídas / 5 no total</span>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Tarefa</th>
+              <th>Ambiente</th>
+              <th>Duração</th>
+              <th>Situação</th>
+              <th>Observação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>01 · Reconhecer o ambiente</strong></td><td>Sala e corredor</td><td>5 min</td><td class="status-text-green">Concluída</td><td>Mapa carregado</td></tr>
+            <tr><td><strong>02 · Aspirar a sala</strong></td><td>Sala</td><td>17 min</td><td class="status-text-green">Concluída</td><td>Área coberta</td></tr>
+            <tr><td><strong>03 · Aspirar o corredor</strong></td><td>Corredor</td><td>10 min</td><td class="status-text-purple">Em execução</td><td>Sem obstáculos</td></tr>
+            <tr><td><strong>04 · Revisar áreas pendentes</strong></td><td>Sala e corredor</td><td>5 min</td><td>Pendente</td><td>Após a aspiração</td></tr>
+            <tr><td><strong>05 · Retornar à base</strong></td><td>Base da sala</td><td>3 min</td><td>Pendente</td><td>Ao finalizar a missão</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Sensores e Próximo Cuidado -->
+    <section class="robots-grid-2" style="grid-template-columns: 2fr 1fr;">
+      <article class="card">
+        <h2 style="margin-bottom: 1rem;">Sensores em tempo real</h2>
+        <div class="card-footer" style="padding: 0.65rem 0; border-bottom: 1px solid var(--border-light);">
+          <strong style="color: var(--text-dark);">LiDAR</strong>
+          <span>Mapa atualizado às 14:32</span>
+          <span class="status-text-green">Normal</span>
+        </div>
+        <div class="card-footer" style="padding: 0.65rem 0; border-bottom: 1px solid var(--border-light);">
+          <strong style="color: var(--text-dark);">Antiqueda</strong>
+          <span>Bordas protegidas</span>
+          <span class="status-text-green">4 ativos</span>
+        </div>
+        <div class="card-footer" style="padding: 0.65rem 0; border-bottom: 1px solid var(--border-light);">
+          <strong style="color: var(--text-dark);">Anticolisão</strong>
+          <span>Nenhum obstáculo detectado</span>
+          <span class="status-text-green">Livre</span>
+        </div>
+        <div class="card-footer" style="padding: 0.65rem 0;">
+          <strong style="color: var(--text-dark);">Rodas e deslocamento</strong>
+          <span>Tração e rota estáveis</span>
+          <span class="status-text-green">Normal</span>
+        </div>
+      </article>
+
+      <article class="card tint">
+        <h2 style="margin-bottom: 0.5rem;">Próximo cuidado</h2>
+        <strong style="color: var(--blue-text); display: block; margin-bottom: 0.5rem;">Trocar o filtro em 28/11</strong>
+        <p style="font-size: 0.82rem; color: #3b2d63; margin-bottom: 1rem;">A troca preventiva está agendada. O robô pode continuar suas limpezas normalmente.</p>
+        <p style="font-size: 0.78rem; color: #3b2d63; margin-bottom: 1rem;">Uso do filtro: 40 h desde a última troca</p>
+        <a href="manutencao.html" class="link-action">Ver manutenção →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Robôs de casa · Minha casa</span>
+    <span>Dados ilustrativos · 14:32</span>
+  </footer>
+</body>
+</html>
