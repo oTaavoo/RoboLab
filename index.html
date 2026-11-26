@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboLab — Painel de Controle</title>
+  <link rel="stylesheet" href="css/comum.css">
+  <link rel="stylesheet" href="css/painel.css">
+</head>
+<body>
+  <header class="barra-superior">
+    <div class="conteudo-barra-superior">
+      <a href="index.html" class="marca">
+        <span class="icone-marca">≡</span>
+        <span>RoboLab</span>
+      </a>
+      <nav class="links-navegacao" aria-label="Navegação principal">
+        <a href="index.html" class="ativo">Painel</a>
+        <a href="robos.html">Frota</a>
+        <a href="detalhes.html">Detalhes</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="tarefas.html">Tarefas</a>
+      </nav>
+      <div class="acoes-usuario">
+        <span>Minha frota</span>
+        <a href="login.html" class="link-conta">Minha conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteiner">
+    <section class="cabecalho-pagina">
+      <div>
+        <h1>Gerencie seus robôs em um só lugar.</h1>
+        <p>Acompanhe seus robôs, as rotinas de limpeza e os modos de operação.</p>
+      </div>
+      <div class="metadados-cabecalho">
+        <span>Atualizado às <time id="hora-atualizacao"></time></span>
+        <a href="tarefas.html" class="botao-principal">+ Nova rotina</a>
+      </div>
+    </section>
+
+    <section class="grade-indicadores" aria-label="Indicadores operacionais">
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Robôs conectados</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador roxo"></span>
+          <span class="numero-indicador">08</span>
+          <span class="subtitulo-indicador">08 robôs conectados</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Em limpeza</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador verde"></span>
+          <span class="numero-indicador">02</span>
+          <span class="subtitulo-indicador">limpando ambientes</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Em recarga</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador laranja"></span>
+          <span class="numero-indicador">01</span>
+          <span class="subtitulo-indicador">retorno em 25 min</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Disponíveis</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador roxo"></span>
+          <span class="numero-indicador">04</span>
+          <span class="subtitulo-indicador">prontos para limpar</span>
+        </div>
+      </article>
+    </section>
+
+    <div class="barra-secao">
+      <h2>Seus robôs <span>04 em destaque · 08 no total</span></h2>
+      <div class="controles-filtro">
+        <input class="campo-filtro" type="search" placeholder="Buscar por nome ou ID" aria-label="Buscar robôs por nome ou ID">
+        <select class="campo-filtro" aria-label="Filtrar robôs por status">
+          <option value="">Todos os status</option>
+          <option value="limpando">Em limpeza</option>
+          <option value="carregando">Em recarga</option>
+          <option value="disponivel">Disponível</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="grade-robos-dupla" aria-label="Robôs em destaque">
+      <article class="cartao">
+        <div class="cabecalho-cartao-robo">
+          <div class="grupo-identificacao-robo">
+            <span class="numero-robo verde">01</span>
+            <div>
+              <div class="titulo-robo">Atlas / RB-001</div>
+              <div class="subtitulo-robo">Robô aspirador e mop</div>
+            </div>
+          </div>
+          <span class="etiqueta-status limpando">Em limpeza</span>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <strong>Bateria 87%</strong>
+            <span>Autonomia de 1h 50min</span>
+          </div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso alto progresso-87"></div>
+          </div>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <span class="rotulo-metadado">TAREFA ATUAL</span>
+            <span>68% concluído</span>
+          </div>
+          <div class="nome-tarefa">Aspirar a sala e o corredor</div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso medio progresso-68"></div>
+          </div>
+        </div>
+
+        <div class="grade-metadados-cartao">
+          <div>
+            <span class="rotulo-metadado">Rotina de limpeza</span>
+            <strong>Todos os dias · 14:00</strong>
+          </div>
+          <div>
+            <span class="rotulo-metadado">Modo de operação</span>
+            <strong>Automático · Aspirar</strong>
+          </div>
+        </div>
+
+        <div class="rodape-cartao">
+          <span>Sala e corredor · Conclusão em 8 min</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="cabecalho-cartao-robo">
+          <div class="grupo-identificacao-robo">
+            <span class="numero-robo verde">02</span>
+            <div>
+              <div class="titulo-robo">Orion / RB-002</div>
+              <div class="subtitulo-robo">Robô aspirador e mop</div>
+            </div>
+          </div>
+          <span class="etiqueta-status limpando">Em limpeza</span>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <strong>Bateria 64%</strong>
+            <span>Autonomia de 1h 20min</span>
+          </div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso alto progresso-64"></div>
+          </div>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <span class="rotulo-metadado">TAREFA ATUAL</span>
+            <span>62% concluído</span>
+          </div>
+          <div class="nome-tarefa">Passar pano na cozinha</div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso medio progresso-62"></div>
+          </div>
+        </div>
+
+        <div class="grade-metadados-cartao">
+          <div>
+            <span class="rotulo-metadado">Rotina de limpeza</span>
+            <strong>Seg, qua e sex · 14:15</strong>
+          </div>
+          <div>
+            <span class="rotulo-metadado">Modo de operação</span>
+            <strong>Turbo · Passar pano</strong>
+          </div>
+        </div>
+
+        <div class="rodape-cartao">
+          <span>Cozinha · Conclusão em 14 min</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="cabecalho-cartao-robo">
+          <div class="grupo-identificacao-robo">
+            <span class="numero-robo laranja">03</span>
+            <div>
+              <div class="titulo-robo">Luna / RB-003</div>
+              <div class="subtitulo-robo">Robô aspirador e mop</div>
+            </div>
+          </div>
+          <span class="etiqueta-status carregando">Em recarga</span>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <strong>Bateria 23%</strong>
+            <span>Carga completa em 25 min</span>
+          </div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso baixo progresso-23"></div>
+          </div>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <span class="rotulo-metadado">TAREFA ATUAL</span>
+            <span>23% de carga</span>
+          </div>
+          <div class="nome-tarefa">Recarregar para limpar os quartos</div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso medio progresso-23"></div>
+          </div>
+        </div>
+
+        <div class="grade-metadados-cartao">
+          <div>
+            <span class="rotulo-metadado">Rotina de limpeza</span>
+            <strong>Todos os dias · 15:00</strong>
+          </div>
+          <div>
+            <span class="rotulo-metadado">Modo de operação</span>
+            <strong>Automático · Aspirar e passar pano</strong>
+          </div>
+        </div>
+
+        <div class="rodape-cartao">
+          <span>Base do corredor · Retorno em 25 min</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="cabecalho-cartao-robo">
+          <div class="grupo-identificacao-robo">
+            <span class="numero-robo roxo">04</span>
+            <div>
+              <div class="titulo-robo">Vega / RB-004</div>
+              <div class="subtitulo-robo">Robô aspirador</div>
+            </div>
+          </div>
+          <span class="etiqueta-status disponivel">Disponível</span>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <strong>Bateria 98%</strong>
+            <span>Autonomia de 2h 20min</span>
+          </div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso medio progresso-98"></div>
+          </div>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <span class="rotulo-metadado">TAREFA ATUAL</span>
+            <span>Próxima limpeza às 16:00</span>
+          </div>
+          <div class="nome-tarefa">Aguardando a rotina das 16:00</div>
+          <div class="subtitulo-robo">A limpeza começa automaticamente no horário agendado.</div>
+        </div>
+
+        <div class="grade-metadados-cartao">
+          <div>
+            <span class="rotulo-metadado">Rotina de limpeza</span>
+            <strong>Seg, qua e sex · 16:00</strong>
+          </div>
+          <div>
+            <span class="rotulo-metadado">Modo de operação</span>
+            <strong>Silencioso · Aspirar</strong>
+          </div>
+        </div>
+
+        <div class="rodape-cartao">
+          <span>Base da sala · Pronto para iniciar</span>
+          <a href="tarefas.html" class="link-acao">Iniciar limpeza →</a>
+        </div>
+      </article>
+    </section>
+
+    <section aria-label="Avisos de manutenção">
+      <div class="barra-secao">
+        <h2>Avisos de manutenção</h2>
+      </div>
+      <div class="grade-alertas">
+        <div class="caixa-alerta">
+          <div class="cabecalho-alerta">
+            <strong>Iris · Revisão do motor de sucção</strong>
+            <span>Em atendimento</span>
+          </div>
+          <p>Robô indisponível até a conclusão do atendimento.</p>
+        </div>
+
+        <div class="caixa-alerta">
+          <div class="cabecalho-alerta">
+            <strong>Atlas · Troca do filtro em 28/11</strong>
+            <span>Agendado</span>
+          </div>
+          <p>Agende a troca preventiva para manter a aspiração.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="painel-escuro" aria-label="Últimas atualizações">
+      <div class="cabecalho-cartao-robo cabecalho-atualizacoes">
+        <strong>Últimas atualizações</strong>
+        <span class="subtitulo-robo data-atualizacoes">Hoje, 25 de novembro</span>
+      </div>
+      <div class="grade-atualizacoes">
+        <div>
+          <span class="horario-atualizacao">14:32</span><strong>Atlas iniciou a limpeza</strong>
+          <div class="descricao-atualizacao">Aspiração da sala e do corredor</div>
+        </div>
+        <div>
+          <span class="horario-atualizacao">14:28</span><strong>Luna conectada à base</strong>
+          <div class="descricao-atualizacao">Preparando a limpeza dos quartos</div>
+        </div>
+        <div>
+          <span class="horario-atualizacao">14:25</span><strong>Cora concluiu a limpeza</strong>
+          <div class="descricao-atualizacao">Suíte limpa · Robô disponível</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>Todos os sistemas conectados · Sincronização a cada 30 segundos</span>
+    <span>RoboLab / Visão geral</span>
+  </footer>
+  <script>
+    const horaAtualizacao = document.getElementById("hora-atualizacao");
+
+    function atualizarHora() {
+      horaAtualizacao.textContent = new Date().toLocaleTimeString("pt-BR", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false
+      });
+    }
+
+    atualizarHora();
+    setInterval(atualizarHora, 60000);
+  </script>
+</body>
+</html>

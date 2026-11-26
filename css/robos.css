@@ -1,0 +1,89 @@
+.grade-robos-quadrupla {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.pagina-frota .categorias-equipamentos {
+  margin-bottom: 2rem;
+}
+
+.pagina-frota .painel-categoria {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.pagina-frota .quantidade-categoria {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.pagina-frota .quantidade-categoria.pisos {
+  color: var(--green-main);
+}
+
+.pagina-frota .quantidade-categoria.vidros {
+  color: var(--purple-pill);
+}
+
+.pagina-frota .quantidade-categoria.piscinas {
+  color: var(--orange-main);
+}
+
+.pagina-frota .descricao-categoria {
+  font-size: 0.78rem;
+  color: var(--text-muted-dark);
+}
+
+.pagina-frota .cabecalho-robo-frota {
+  margin-bottom: 0.25rem;
+}
+
+.pagina-frota .modelo-robo {
+  margin-bottom: 0.5rem;
+}
+
+.pagina-frota .funcao-robo {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.pagina-frota .nota-frota {
+  margin-top: 0.85rem;
+}
+
+.pagina-frota .progresso-87 {
+  width: 87%;
+}
+
+.pagina-frota .progresso-64 {
+  width: 64%;
+}
+
+.pagina-frota .progresso-23 {
+  width: 23%;
+}
+
+.pagina-frota .progresso-98 {
+  width: 98%;
+}
+
+.pagina-frota .progresso-85 {
+  width: 85%;
+}
+
+.pagina-frota .progresso-52 {
+  width: 52%;
+}
+
+.pagina-frota .progresso-76 {
+  width: 76%;
+}
+
+.pagina-frota .progresso-91 {
+  width: 91%;
+}

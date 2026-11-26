@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboLab — Detalhes do Robô</title>
+  <link rel="stylesheet" href="css/comum.css">
+  <link rel="stylesheet" href="css/detalhes.css">
+</head>
+<body class="pagina-detalhes">
+  <header class="barra-superior">
+    <div class="conteudo-barra-superior">
+      <a href="index.html" class="marca">
+        <span class="icone-marca">≡</span>
+        <span>RoboLab</span>
+      </a>
+      <nav class="links-navegacao" aria-label="Navegação principal">
+        <a href="index.html">Painel</a>
+        <a href="robos.html">Frota</a>
+        <a href="detalhes.html" class="ativo">Detalhes</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="tarefas.html">Tarefas</a>
+      </nav>
+      <div class="acoes-usuario">
+        <span>Minha frota</span>
+        <a href="login.html" class="link-conta">Minha conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteiner">
+    <section class="cabecalho-pagina">
+      <div>
+        <h1>Atlas / RB-001</h1>
+        <p>Frota / Atlas · Robô aspirador e mop · Modelo Robo S1</p>
+      </div>
+    </section>
+
+    <section class="grade-robos-dupla grade-detalhes-principal">
+      <article class="cartao cartao-ilustracao">
+        <div class="cabecalho-cartao-robo">
+          <span class="link-acao etiqueta-modelo">ROBO S1</span>
+          <span class="subtitulo-robo">RB-001</span>
+        </div>
+        <div class="caixa-ilustracao-robo alta">
+          <div class="robo-aspirador ilustracao-robo-detalhe">
+            <img src="./public/Imagem · Casa S1.svg" alt="Ilustração do robô">
+          </div>
+        </div>
+        <strong>Aspirador e mop inteligente</strong>
+        <p class="subtitulo-robo">Ilustração do equipamento · Modelo conceitual</p>
+      </article>
+
+      <article class="cartao">
+        <div class="cabecalho-cartao-robo">
+          <h2>Ficha técnica</h2>
+          <span class="etiqueta-status limpando">Em limpeza · Conectado</span>
+        </div>
+        <p class="subtitulo-robo tarefa-atual">Tarefa atual: aspirar a sala e o corredor · 68% concluído</p>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <strong>87% de bateria</strong>
+            <span>Autonomia estimada de 1h 50min</span>
+          </div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso alto progresso-87"></div>
+          </div>
+        </div>
+
+        <div class="grade-metadados-cartao metadados-tecnicos">
+          <div><span class="rotulo-metadado">Navegação</span><strong>LiDAR e mapa de ambientes</strong></div>
+          <div><span class="rotulo-metadado">Sucção máxima</span><strong>4.000 Pa</strong></div>
+          <div><span class="rotulo-metadado">Bateria nominal</span><strong>5.200 mAh</strong></div>
+          <div><span class="rotulo-metadado">Reservatórios</span><strong>Pó 400 ml · Água 250 ml</strong></div>
+          <div><span class="rotulo-metadado">Dimensões</span><strong>35 × 35 × 9,6 cm</strong></div>
+          <div><span class="rotulo-metadado">Conectividade</span><strong>Wi-Fi 2,4 GHz · Firmware 2.4.1</strong></div>
+        </div>
+
+        <div class="agendamento-robo">
+          <span>Todos os dias · 14:00</span>
+          <span>Modo automático · Aspirar</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="cartao secao-tarefas-robo">
+      <div class="cabecalho-cartao-robo">
+        <div>
+          <h2>Cinco tarefas do Atlas</h2>
+          <p class="subtitulo-robo">Plano de limpeza da sala e do corredor · Início às 14:00 · Conclusão estimada às 14:40</p>
+        </div>
+        <span class="subtitulo-robo">Missão T-001 · 2 concluídas / 5 no total</span>
+      </div>
+
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th>Tarefa</th>
+              <th>Ambiente</th>
+              <th>Duração</th>
+              <th>Situação</th>
+              <th>Observação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>01 · Reconhecer o ambiente</strong></td><td>Sala e corredor</td><td>5 min</td><td class="texto-status-verde">Concluída</td><td>Mapa carregado</td></tr>
+            <tr><td><strong>02 · Aspirar a sala</strong></td><td>Sala</td><td>17 min</td><td class="texto-status-verde">Concluída</td><td>Área coberta</td></tr>
+            <tr><td><strong>03 · Aspirar o corredor</strong></td><td>Corredor</td><td>10 min</td><td class="texto-status-roxo">Em execução</td><td>Sem obstáculos</td></tr>
+            <tr><td><strong>04 · Revisar áreas pendentes</strong></td><td>Sala e corredor</td><td>5 min</td><td>Pendente</td><td>Após a aspiração</td></tr>
+            <tr><td><strong>05 · Retornar à base</strong></td><td>Base da sala</td><td>3 min</td><td>Pendente</td><td>Ao finalizar a missão</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="grade-robos-dupla grade-detalhes-sensores">
+      <article class="cartao">
+        <h2 class="titulo-sensores">Sensores em tempo real</h2>
+        <div class="rodape-cartao item-sensor">
+          <strong>LiDAR</strong>
+          <span>Mapa atualizado às 14:32</span>
+          <span class="texto-status-verde">Normal</span>
+        </div>
+        <div class="rodape-cartao item-sensor">
+          <strong>Antiqueda</strong>
+          <span>Bordas protegidas</span>
+          <span class="texto-status-verde">4 ativos</span>
+        </div>
+        <div class="rodape-cartao item-sensor">
+          <strong>Anticolisão</strong>
+          <span>Nenhum obstáculo detectado</span>
+          <span class="texto-status-verde">Livre</span>
+        </div>
+        <div class="rodape-cartao item-sensor ultimo-item-sensor">
+          <strong>Rodas e deslocamento</strong>
+          <span>Tração e rota estáveis</span>
+          <span class="texto-status-verde">Normal</span>
+        </div>
+      </article>
+
+      <article class="cartao realce">
+        <h2 class="titulo-proximo-cuidado">Próximo cuidado</h2>
+        <strong class="acao-proximo-cuidado">Trocar o filtro em 28/11</strong>
+        <p class="descricao-proximo-cuidado">A troca preventiva está agendada. O robô pode continuar suas limpezas normalmente.</p>
+        <p class="uso-filtro">Uso do filtro: 40 h desde a última troca</p>
+        <a href="manutencao.html" class="link-acao">Ver manutenção →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>RoboLab · Minha frota</span>
+    <span>Dados ilustrativos · 14:32</span>
+  </footer>
+</body>
+</html>

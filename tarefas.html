@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboLab — Missões e Tarefas</title>
+  <link rel="stylesheet" href="css/comum.css">
+  <link rel="stylesheet" href="css/tarefas.css">
+</head>
+<body class="pagina-tarefas">
+  <header class="barra-superior">
+    <div class="conteudo-barra-superior">
+      <a href="index.html" class="marca">
+        <span class="icone-marca">≡</span>
+        <span>RoboLab</span>
+      </a>
+      <nav class="links-navegacao" aria-label="Navegação principal">
+        <a href="index.html">Painel</a>
+        <a href="robos.html">Frota</a>
+        <a href="detalhes.html">Detalhes</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="tarefas.html" class="ativo">Tarefas</a>
+      </nav>
+      <div class="acoes-usuario">
+        <span>Minha frota</span>
+        <a href="login.html" class="link-conta">Minha conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteiner">
+    <section class="cabecalho-pagina">
+      <div>
+        <h1>Cada tarefa no seu tempo.</h1>
+        <p>Organize as limpezas, acompanhe as prioridades e veja o que acontece em cada ambiente.</p>
+      </div>
+    </section>
+
+    <section class="grade-indicadores">
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Tarefas de hoje</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador roxo"></span>
+          <span class="numero-indicador">08</span>
+          <span class="subtitulo-indicador">01 bloqueada por manutenção</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Em execução</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador verde"></span>
+          <span class="numero-indicador">02</span>
+          <span class="subtitulo-indicador">Atlas e Orion</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Programadas</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador roxo"></span>
+          <span class="numero-indicador">03</span>
+          <span class="subtitulo-indicador">próximos horários</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Concluídas</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador verde"></span>
+          <span class="numero-indicador">02</span>
+          <span class="subtitulo-indicador">Aqua e Cora</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="cartao secao-missoes">
+      <div class="cabecalho-cartao-robo">
+        <h2>Missões atribuídas</h2>
+        <span class="subtitulo-robo">25 de novembro · Atualizado às 14:32</span>
+      </div>
+
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tarefa</th>
+              <th>Robô</th>
+              <th>Prioridade</th>
+              <th>Responsável</th>
+              <th>Situação</th>
+              <th>Horário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="missao-em-execucao"><td><strong>T-001</strong></td><td>Aspirar sala e corredor</td><td>Atlas</td><td class="texto-status-laranja">Alta</td><td>Marina</td><td class="texto-status-roxo">Em execução</td><td>14:00 – 14:40</td></tr>
+            <tr><td><strong>T-002</strong></td><td>Passar pano na cozinha</td><td>Orion</td><td>Média</td><td>Marina</td><td class="texto-status-roxo">Em execução</td><td>14:15 – 14:46</td></tr>
+            <tr><td><strong>T-003</strong></td><td>Limpar os quartos</td><td>Luna</td><td>Média</td><td>Rafael</td><td class="texto-status-roxo">Programada</td><td>15:00 – 15:40</td></tr>
+            <tr><td><strong>T-004</strong></td><td>Aspirar o escritório</td><td>Vega</td><td>Baixa</td><td>Rafael</td><td class="texto-status-roxo">Programada</td><td>16:00 – 16:30</td></tr>
+            <tr><td><strong>T-005</strong></td><td>Passar pano na lavanderia</td><td>Nino</td><td>Média</td><td>Marina</td><td class="texto-status-roxo">Programada</td><td>15:30 – 16:00</td></tr>
+            <tr><td><strong>T-006</strong></td><td>Limpar janelas da sala</td><td>Iris</td><td class="texto-status-laranja">Alta</td><td>Marina</td><td class="texto-status-laranja">Bloqueada</td><td>17:00 – 17:30*</td></tr>
+            <tr><td><strong>T-007</strong></td><td>Limpar o fundo da piscina</td><td>Aqua</td><td>Baixa</td><td>Rafael</td><td class="texto-status-verde">Concluída</td><td>13:00 – 14:10</td></tr>
+            <tr><td><strong>T-008</strong></td><td>Aspirar a suíte</td><td>Cora</td><td>Média</td><td>Rafael</td><td class="texto-status-verde">Concluída</td><td>13:30 – 14:20</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="texto-status-laranja nota-missao">* T-006: horário previsto. O início depende da liberação da Iris pela assistência técnica.</p>
+    </section>
+
+    <section class="cartao secao-cronograma">
+      <div class="cabecalho-cartao-robo">
+        <div>
+          <h2>Cronograma das atividades</h2>
+          <p class="subtitulo-robo">13:00 — 18:00 (Horários ilustrativos)</p>
+        </div>
+        <span class="subtitulo-robo">Hoje · Agora 14:32</span>
+      </div>
+
+      <div class="linha-cronograma">
+        <strong>Atlas · T-001</strong>
+        <div class="trilho-cronograma"><div class="barra-cronograma cronograma-atlas"></div></div>
+      </div>
+      <div class="linha-cronograma">
+        <strong>Orion · T-002</strong>
+        <div class="trilho-cronograma"><div class="barra-cronograma cronograma-orion"></div></div>
+      </div>
+      <div class="linha-cronograma">
+        <strong>Luna · T-003</strong>
+        <div class="trilho-cronograma"><div class="barra-cronograma cronograma-luna"></div></div>
+      </div>
+      <div class="linha-cronograma">
+        <strong>Vega · T-004</strong>
+        <div class="trilho-cronograma"><div class="barra-cronograma cronograma-vega"></div></div>
+      </div>
+      <div class="linha-cronograma">
+        <strong>Iris · T-006*</strong>
+        <div class="trilho-cronograma"><div class="barra-cronograma cronograma-iris"></div></div>
+      </div>
+      <div class="linha-cronograma">
+        <strong>Aqua · T-007</strong>
+        <div class="trilho-cronograma"><div class="barra-cronograma cronograma-aqua"></div></div>
+      </div>
+    </section>
+
+    <section class="grade-robos-dupla">
+      <article class="cartao">
+        <div class="cabecalho-cartao-robo">
+          <h2>T-001 · Aspirar sala e corredor</h2>
+          <span class="texto-status-roxo status-execucao">Em execução</span>
+        </div>
+        <p class="subtitulo-robo descricao-tarefa">Limpeza diária das áreas acessíveis, respeitando as zonas restritas e o percurso salvo no mapa.</p>
+
+        <div class="grade-metadados-cartao metadados-tarefa">
+          <div><span class="rotulo-metadado">Robô</span><strong>Atlas · RB-001</strong></div>
+          <div><span class="rotulo-metadado">Responsável</span><strong>Marina</strong></div>
+          <div><span class="rotulo-metadado">Previsão</span><strong>14:40</strong></div>
+        </div>
+
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor">
+            <strong class="texto-progresso-tarefa">68% concluído · 8 min restantes</strong>
+          </div>
+          <div class="trilho-progresso">
+            <div class="preenchimento-progresso medio progresso-68"></div>
+          </div>
+        </div>
+        <span class="subtitulo-robo">Prioridade alta · Modo automático · Aspirar</span>
+      </article>
+
+      <article class="cartao realce">
+        <h2 class="titulo-criterios">Quando esta tarefa estará concluída?</h2>
+        <p class="introducao-criterios">Todos os critérios abaixo devem ser atendidos.</p>
+
+        <p class="criterio-conclusao"><strong>01</strong> Cobrir 100% da área acessível da sala e do corredor.</p>
+        <p class="criterio-conclusao"><strong>02</strong> Finalizar sem falhas ou alertas de obstrução pendentes.</p>
+        <p class="criterio-conclusao ultimo-criterio"><strong>03</strong> Retornar à base e confirmar o encaixe para recarga.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>RoboLab · Minha frota</span>
+    <span>Dados ilustrativos · 14:32</span>
+  </footer>
+</body>
+</html>

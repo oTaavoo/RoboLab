@@ -1,0 +1,86 @@
+.pagina-detalhes .grade-detalhes-principal {
+  grid-template-columns: 1fr 2fr;
+}
+
+.pagina-detalhes .cartao-ilustracao {
+  background-color: var(--bg-card-tint);
+}
+
+.caixa-ilustracao-robo.alta {
+  height: 240px;
+}
+
+.pagina-detalhes .grade-detalhes-sensores {
+  grid-template-columns: 2fr 1fr;
+}
+
+.pagina-detalhes .etiqueta-modelo {
+  font-size: 0.75rem;
+}
+
+.pagina-detalhes .ilustracao-robo-detalhe {
+  width: 130px;
+  height: 130px;
+}
+
+.pagina-detalhes .tarefa-atual {
+  margin-bottom: 1rem;
+}
+
+.pagina-detalhes .metadados-tecnicos {
+  border-bottom: none;
+}
+
+.pagina-detalhes .agendamento-robo {
+  background: var(--bg-purple-light);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--blue-text);
+  font-weight: 600;
+}
+
+.pagina-detalhes .secao-tarefas-robo {
+  margin-bottom: 2rem;
+}
+
+.pagina-detalhes .titulo-sensores {
+  margin-bottom: 1rem;
+}
+
+.pagina-detalhes .item-sensor {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.pagina-detalhes .item-sensor strong {
+  color: var(--text-dark);
+}
+
+.pagina-detalhes .ultimo-item-sensor {
+  border-bottom: none;
+}
+
+.pagina-detalhes .titulo-proximo-cuidado {
+  margin-bottom: 0.5rem;
+}
+
+.pagina-detalhes .acao-proximo-cuidado {
+  color: var(--blue-text);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pagina-detalhes .descricao-proximo-cuidado {
+  font-size: 0.82rem;
+  color: #3b2d63;
+  margin-bottom: 1rem;
+}
+
+.pagina-detalhes .uso-filtro {
+  font-size: 0.78rem;
+  color: #3b2d63;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboLab — Frota</title>
+  <link rel="stylesheet" href="css/comum.css">
+  <link rel="stylesheet" href="css/frota.css">
+</head>
+<body class="pagina-frota">
+  <header class="barra-superior">
+    <div class="conteudo-barra-superior">
+      <a href="index.html" class="marca">
+        <span class="icone-marca">≡</span>
+        <span>RoboLab</span>
+      </a>
+      <nav class="links-navegacao" aria-label="Navegação principal">
+        <a href="index.html">Painel</a>
+        <a href="robos.html" class="ativo">Frota</a>
+        <a href="detalhes.html">Detalhes</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="tarefas.html">Tarefas</a>
+      </nav>
+      <div class="acoes-usuario">
+        <span>Minha frota</span>
+        <a href="login.html" class="link-conta">Minha conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteiner">
+    <section class="cabecalho-pagina">
+      <div>
+        <h1>Sua frota de robôs</h1>
+        <p>Encontre cada equipamento e acompanhe o estado dos seus oito robôs.</p>
+      </div>
+    </section>
+
+    <section class="grade-atualizacoes categorias-equipamentos" aria-label="Categorias de equipamentos">
+      <div class="painel-escuro painel-categoria">
+        <span class="quantidade-categoria pisos">06</span>
+        <div>
+          <strong>Pisos</strong>
+          <div class="descricao-categoria">Aspiração e passagem de pano</div>
+        </div>
+      </div>
+
+      <div class="painel-escuro painel-categoria">
+        <span class="quantidade-categoria vidros">01</span>
+        <div>
+          <strong>Vidros</strong>
+          <div class="descricao-categoria">Janelas e superfícies de vidro</div>
+        </div>
+      </div>
+
+      <div class="painel-escuro painel-categoria">
+        <span class="quantidade-categoria piscinas">01</span>
+        <div>
+          <strong>Piscinas</strong>
+          <div class="descricao-categoria">Limpeza do fundo da piscina</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grade-robos-quadrupla" aria-label="Lista de robôs da frota">
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Casa S1.svg" class="robo-imagem" alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Atlas</strong>
+          <span class="subtitulo-robo">RB-001</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Robo S1</div>
+        <div class="funcao-robo">Aspirar e passar pano</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 87%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso alto progresso-87"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status limpando">Em limpeza</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Casa S1.svg" class="robo-imagem"  alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Orion</strong>
+          <span class="subtitulo-robo">RB-002</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Robo S1</div>
+        <div class="funcao-robo">Aspirar e passar pano</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 64%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso alto progresso-64"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status limpando">Em limpeza</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Casa S1.svg" class="robo-imagem" alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Luna</strong>
+          <span class="subtitulo-robo">RB-003</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Robo S1</div>
+        <div class="funcao-robo">Aspirar e passar pano</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 23%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso baixo progresso-23"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status carregando">Em recarga</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Casa S1.svg" class="robo-imagem" alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Vega</strong>
+          <span class="subtitulo-robo">RB-004</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Robo Lite</div>
+        <div class="funcao-robo">Aspirar pisos</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 98%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso medio progresso-98"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status disponivel">Disponível</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Casa S1.svg" class="robo-imagem"  alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Nino</strong>
+          <span class="subtitulo-robo">RB-005</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Robo Lite</div>
+        <div class="funcao-robo">Passar pano</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 85%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso medio progresso-85"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status disponivel">Disponível</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Vidro V1 · ilustração.svg" class="robo-imagem"  alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Iris</strong>
+          <span class="subtitulo-robo">RB-006</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Vidro V1</div>
+        <div class="funcao-robo">Limpar janelas</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 52%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso medio progresso-52"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status manutencao">Manutenção</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Aqua P1 · ilustração.svg" class="robo-imagem"  alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Aqua</strong>
+          <span class="subtitulo-robo">RB-007</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Aqua P1</div>
+        <div class="funcao-robo">Limpar piscina</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 76%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso medio progresso-76"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status disponivel">Disponível</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+
+      <article class="cartao">
+        <div class="caixa-ilustracao-robo">
+          <div class="robo-aspirador">
+            <img src="./public/Imagem · Casa S1.svg" class="robo-imagem"  alt="Ilustração do robô">
+          </div>
+        </div>
+        <div class="cabecalho-cartao-robo cabecalho-robo-frota">
+          <strong>Cora</strong>
+          <span class="subtitulo-robo">RB-008</span>
+        </div>
+        <div class="subtitulo-robo modelo-robo">Modelo Robo Lite</div>
+        <div class="funcao-robo">Aspirar pisos</div>
+        <div class="bloco-medidor">
+          <div class="rotulos-medidor"><span>Bateria 91%</span></div>
+          <div class="trilho-progresso"><div class="preenchimento-progresso medio progresso-91"></div></div>
+        </div>
+        <div class="rodape-cartao">
+          <span class="etiqueta-status disponivel">Disponível</span>
+          <a href="detalhes.html" class="link-acao">Ver detalhes →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="cartao">
+      <div class="cabecalho-cartao-robo">
+        <h2>Tabela da frota</h2>
+        <span class="subtitulo-robo">08 equipamentos · Todos os ambientes</span>
+      </div>
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th>Robô / ID</th>
+              <th>Modelo</th>
+              <th>Função</th>
+              <th>Bateria</th>
+              <th>Estado</th>
+              <th>Localização</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Atlas · RB-001</strong></td><td>Robo S1</td><td>Aspirar e passar pano</td><td>87%</td><td class="texto-status-verde">Em limpeza</td><td>Sala e corredor</td></tr>
+            <tr><td><strong>Orion · RB-002</strong></td><td>Robo S1</td><td>Aspirar e passar pano</td><td>64%</td><td class="texto-status-verde">Em limpeza</td><td>Cozinha</td></tr>
+            <tr><td><strong>Luna · RB-003</strong></td><td>Robo S1</td><td>Aspirar e passar pano</td><td>23%</td><td class="texto-status-laranja">Em recarga</td><td>Base do corredor</td></tr>
+            <tr><td><strong>Vega · RB-004</strong></td><td>Robo Lite</td><td>Aspirar pisos</td><td>98%</td><td class="texto-status-roxo">Disponível</td><td>Base da sala</td></tr>
+            <tr><td><strong>Nino · RB-005</strong></td><td>Robo Lite</td><td>Passar pano</td><td>85%</td><td class="texto-status-roxo">Disponível</td><td>Lavanderia</td></tr>
+            <tr><td><strong>Iris · RB-006</strong></td><td>Vidro V1</td><td>Limpar janelas</td><td>52%</td><td class="texto-status-laranja">Manutenção</td><td>Bancada de apoio</td></tr>
+            <tr><td><strong>Aqua · RB-007</strong></td><td>Aqua P1</td><td>Limpar piscina</td><td>76%</td><td class="texto-status-roxo">Disponível</td><td>Área externa</td></tr>
+            <tr><td><strong>Cora · RB-008</strong></td><td>Robo Lite</td><td>Aspirar pisos</td><td>91%</td><td class="texto-status-roxo">Disponível</td><td>Base do escritório</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="subtitulo-robo nota-frota">Exibindo os 8 equipamentos cadastrados · Dados ilustrativos</p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>RoboLab · Minha frota</span>
+    <span>Dados ilustrativos · 14:32</span>
+  </footer>
+</body>
+</html>

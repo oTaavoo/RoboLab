@@ -1,0 +1,113 @@
+
+.linha-cronograma {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.8rem;
+}
+
+.trilho-cronograma {
+  background-color: #f3f3f8;
+  height: 16px;
+  border-radius: 999px;
+  position: relative;
+}
+
+.barra-cronograma {
+  position: absolute;
+  top: 2px;
+  height: 12px;
+  border-radius: 999px;
+}
+
+.pagina-tarefas .secao-missoes,
+.pagina-tarefas .secao-cronograma {
+  margin-bottom: 2rem;
+}
+
+.pagina-tarefas .missao-em-execucao {
+  background-color: #f3e8ff;
+}
+
+.pagina-tarefas .nota-missao {
+  font-size: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.pagina-tarefas .cronograma-atlas {
+  left: 20%;
+  width: 15%;
+  background: var(--purple-main);
+}
+
+.pagina-tarefas .cronograma-orion {
+  left: 25%;
+  width: 12%;
+  background: var(--purple-main);
+}
+
+.pagina-tarefas .cronograma-luna {
+  left: 40%;
+  width: 15%;
+  background: var(--purple-pill);
+}
+
+.pagina-tarefas .cronograma-vega {
+  left: 60%;
+  width: 12%;
+  background: var(--purple-pill);
+}
+
+.pagina-tarefas .cronograma-iris {
+  left: 80%;
+  width: 12%;
+  background: var(--orange-main);
+}
+
+.pagina-tarefas .cronograma-aqua {
+  left: 0%;
+  width: 22%;
+  background: var(--green-main);
+}
+
+.pagina-tarefas .status-execucao {
+  font-size: 0.78rem;
+}
+
+.pagina-tarefas .descricao-tarefa {
+  margin-bottom: 1rem;
+}
+
+.pagina-tarefas .metadados-tarefa {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pagina-tarefas .texto-progresso-tarefa {
+  color: var(--blue-text);
+}
+
+.pagina-tarefas .titulo-criterios {
+  margin-bottom: 0.35rem;
+}
+
+.pagina-tarefas .introducao-criterios {
+  font-size: 0.78rem;
+  color: var(--blue-text);
+  margin-bottom: 1rem;
+}
+
+.pagina-tarefas .criterio-conclusao {
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.pagina-tarefas .criterio-conclusao strong {
+  color: var(--blue-text);
+}
+
+.pagina-tarefas .ultimo-criterio {
+  margin-bottom: 0;
+}

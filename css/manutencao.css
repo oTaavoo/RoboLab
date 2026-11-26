@@ -1,0 +1,35 @@
+.pagina-manutencao .secao-registros-manutencao {
+  margin-bottom: 2rem;
+}
+
+.pagina-manutencao .legenda-manutencao {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}
+
+.pagina-manutencao .titulo-historico,
+.pagina-manutencao .titulo-rotina {
+  margin-bottom: 1rem;
+}
+
+.pagina-manutencao .item-historico,
+.pagina-manutencao .item-rotina {
+  margin-bottom: 0.85rem;
+}
+
+.pagina-manutencao .data-historico {
+  font-size: 0.75rem;
+}
+
+.pagina-manutencao .titulo-item-rotina {
+  color: var(--blue-text);
+  font-size: 0.85rem;
+}
+
+.pagina-manutencao .descricao-item-rotina {
+  font-size: 0.8rem;
+  color: #3b2d63;
+}

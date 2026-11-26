@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboLab — Manutenção</title>
+  <link rel="stylesheet" href="css/comum.css">
+  <link rel="stylesheet" href="css/manutencao.css">
+</head>
+<body class="pagina-manutencao">
+  <header class="barra-superior">
+    <div class="conteudo-barra-superior">
+      <a href="index.html" class="marca">
+        <span class="icone-marca">≡</span>
+        <span>RoboLab</span>
+      </a>
+      <nav class="links-navegacao" aria-label="Navegação principal">
+        <a href="index.html">Painel</a>
+        <a href="robos.html">Frota</a>
+        <a href="detalhes.html">Detalhes</a>
+        <a href="manutencao.html" class="ativo">Manutenção</a>
+        <a href="tarefas.html">Tarefas</a>
+      </nav>
+      <div class="acoes-usuario">
+        <span>Minha frota</span>
+        <a href="login.html" class="link-conta">Minha conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteiner">
+    <section class="cabecalho-pagina">
+      <div>
+        <h1>Cuidar agora, limpar sempre.</h1>
+        <p>Acompanhe os atendimentos, o histórico e os próximos cuidados dos seus robôs.</p>
+      </div>
+    </section>
+
+    <section class="grade-indicadores">
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Registros no período</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador roxo"></span>
+          <span class="numero-indicador">06</span>
+          <span class="subtitulo-indicador">20 a 28 de novembro</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Em atendimento</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador laranja"></span>
+          <span class="numero-indicador">01</span>
+          <span class="subtitulo-indicador">Iris indisponível</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Agendados</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador roxo"></span>
+          <span class="numero-indicador">02</span>
+          <span class="subtitulo-indicador">próximos cuidados</span>
+        </div>
+      </article>
+
+      <article class="cartao-indicador">
+        <div class="titulo-indicador">Concluídos</div>
+        <div class="linha-valores-indicador">
+          <span class="barra-indicador verde"></span>
+          <span class="numero-indicador">03</span>
+          <span class="subtitulo-indicador">equipamentos liberados</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="cartao secao-registros-manutencao">
+      <div class="cabecalho-cartao-robo">
+        <h2>Registros de manutenção</h2>
+        <span class="subtitulo-robo">Todos os estados · 6 registros</span>
+      </div>
+
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Serviço</th>
+              <th>Robô</th>
+              <th>Data</th>
+              <th>Tipo</th>
+              <th>Atendimento</th>
+              <th>Responsável</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>M-106</td><td><strong>Revisar motor de sucção</strong></td><td>Iris · RB-006</td><td>25/11/2026</td><td>Corretiva</td><td class="texto-status-laranja">Em atendimento</td><td>Assistência técnica</td></tr>
+            <tr><td>M-105</td><td><strong>Substituir filtro de pó</strong></td><td>Atlas · RB-001</td><td>28/11/2026</td><td>Preventiva</td><td class="texto-status-roxo">Agendado</td><td>Marina</td></tr>
+            <tr><td>M-104</td><td><strong>Higienizar mop</strong></td><td>Nino · RB-005</td><td>26/11/2026</td><td>Preventiva</td><td class="texto-status-roxo">Agendado</td><td>Marina</td></tr>
+            <tr><td>M-103</td><td><strong>Limpar escovas laterais</strong></td><td>Cora · RB-008</td><td>24/11/2026</td><td>Preventiva</td><td class="texto-status-verde">Concluído</td><td>Marina</td></tr>
+            <tr><td>M-102</td><td><strong>Calibrar sensores</strong></td><td>Luna · RB-003</td><td>22/11/2026</td><td>Corretiva</td><td class="texto-status-verde">Concluído</td><td>Assistência técnica</td></tr>
+            <tr><td>M-101</td><td><strong>Revisar rolos de limpeza</strong></td><td>Aqua · RB-007</td><td>20/11/2026</td><td>Preventiva</td><td class="texto-status-verde">Concluído</td><td>Assistência técnica</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="legenda-manutencao">
+        <span class="texto-status-laranja">Em atendimento: em análise ou reparo</span>
+        <span class="texto-status-roxo">Agendado: cuidado planejado</span>
+        <span class="texto-status-verde">Concluído: equipamento liberado</span>
+      </div>
+    </section>
+
+    <section class="grade-robos-dupla">
+      <article class="cartao">
+        <h2 class="titulo-historico">Histórico recente</h2>
+        <div class="item-historico">
+          <span class="link-acao data-historico">24 NOV</span> · <strong>Cora · Escovas higienizadas</strong>
+          <p class="subtitulo-robo">Teste de aspiração concluído e robô liberado.</p>
+        </div>
+        <div class="item-historico">
+          <span class="link-acao data-historico">22 NOV</span> · <strong>Luna · Sensores calibrados</strong>
+          <p class="subtitulo-robo">Leitura de obstáculos normalizada.</p>
+        </div>
+        <div>
+          <span class="link-acao data-historico">20 NOV</span> · <strong>Aqua · Rolos revisados</strong>
+          <p class="subtitulo-robo">Ciclo de teste concluído sem alertas.</p>
+        </div>
+      </article>
+
+      <article class="cartao realce">
+        <h2 class="titulo-rotina">Prevenir faz parte da rotina</h2>
+        <div class="item-rotina">
+          <strong class="titulo-item-rotina">Após cada limpeza</strong>
+          <p class="descricao-item-rotina">Esvaziar o reservatório e lavar o pano removível.</p>
+        </div>
+        <div class="item-rotina">
+          <strong class="titulo-item-rotina">Toda semana</strong>
+          <p class="descricao-item-rotina">Limpar escovas, rodas e a superfície dos sensores.</p>
+        </div>
+        <div>
+          <strong class="titulo-item-rotina">Próximos cuidados</strong>
+          <p class="descricao-item-rotina">26/11: mop do Nino · 28/11: filtro do Atlas.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <span>RoboLab · Minha frota</span>
+    <span>Dados ilustrativos · 14:32</span>
+  </footer>
+</body>
+</html>
