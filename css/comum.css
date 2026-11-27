@@ -72,6 +72,14 @@ a {
   font-size: 1rem;
 }
 
+.marca img {
+  display: block;
+  width: 150px;
+  height: 32px;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
 .icone-marca {
   width: 32px;
   height: 32px;

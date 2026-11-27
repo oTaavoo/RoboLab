@@ -1,5 +1,5 @@
 .pagina-detalhes .grade-detalhes-principal {
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 }
 
 .pagina-detalhes .cartao-ilustracao {
@@ -8,10 +8,11 @@
 
 .caixa-ilustracao-robo.alta {
   height: 240px;
+  overflow: hidden;
 }
 
 .pagina-detalhes .grade-detalhes-sensores {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
 }
 
 .pagina-detalhes .etiqueta-modelo {
@@ -19,8 +20,16 @@
 }
 
 .pagina-detalhes .ilustracao-robo-detalhe {
-  width: 130px;
-  height: 130px;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.pagina-detalhes .ilustracao-robo-detalhe .robo-imagem {
+  width: min(100%, 300px);
+  max-width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 .pagina-detalhes .tarefa-atual {
@@ -83,4 +92,11 @@
   font-size: 0.78rem;
   color: #3b2d63;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pagina-detalhes .grade-detalhes-principal,
+  .pagina-detalhes .grade-detalhes-sensores {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
